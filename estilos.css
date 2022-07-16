@@ -15,7 +15,7 @@
     width: 100%;
     height: 55%;
     margin-top: 50px;
-    background: rgb(8, 112, 112);
+    background-image: linear-gradient(to left, rgb(8, 112, 112), red);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
@@ -84,7 +84,13 @@ ul {
 
 .nav-menu ul li {
     padding: 15px;
+    transition: all 300ms;
 }
+
+.nav-menu ul li:hover {
+    transform: scale(1.15);
+}
+
 .nav-menu ul li a:hover {
     border-bottom: 2px solid black;
 }
@@ -176,7 +182,7 @@ footer i {
     padding: 40px;
     margin-top: 50px;
     margin-bottom: 60px;
-    background: rgb(116, 119, 119);
+    background-image: linear-gradient(to left, rgb(8, 112, 112), red);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
@@ -264,7 +270,7 @@ footer i {
     margin-bottom: 60px;
     text-align: center;
     color: white;
-    background-color: rgb(8, 112, 112);
+    background-image: linear-gradient(to left, rgb(8, 112, 112), red);
 }
 
 .principal-contacto h2 {
