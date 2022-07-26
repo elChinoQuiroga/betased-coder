@@ -22,13 +22,26 @@
 
 .presentacion h1 {
     display: flex;
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 20px;
     flex-direction: column;
     align-items: center;
     justify-items: flex-start;
     box-sizing: border-box;
     
+}
+.presentacion h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-start;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.presentacion .mision {
+    padding: 15px;
+
 }
 
 .presentacion p {
@@ -63,9 +76,10 @@ a {
 
 }
 
-.navbar .nav-item .nav-link:hover {
-    font-size: 20px;
+.navbar .nav-item .nav-link:hover {  
     color: rgb(31, 228, 228);
+    border-bottom: solid 2px;
+    padding-bottom: 2px;
 }
 
 /* parrafo principal*/
@@ -80,7 +94,7 @@ a {
    
 }
 
-/* contenido principal*/
+/* contenido principal index*/
 
 .MenuDeContenido {
     display: grid;
@@ -137,6 +151,7 @@ footer i {
     color: #fff;
     padding-bottom: 20px;
 }
+/* fin del contenido index */
 
 /* footer con bootstrap */
 
@@ -154,7 +169,7 @@ footer {
     transform: translateY(15px);
 }
 
-/* estilos Seccion tecnologia*/
+/* estilos tecnologia*/
 
 .presentacion-tec { 
     width: 100%;
@@ -187,79 +202,33 @@ footer {
     word-spacing: 2px;
 }
 
-/* body parrafo 1 */
+/* tecnologia  acordion */
 
- #section {
-    width: 100%;
-    height: 400px;
-    background-color: #2f3640a1;
-    margin: 0;
-    box-sizing: border-box;
-    margin-top: 100px;
-    
- }
-
- .nleft {
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    overflow: hidden;
- }
-
- .nright {
-    overflow: hidden;
- }
-
- .nright p {
-    display: flex;
-    text-align: justify;
-    padding: 40px;
-    color: #fff;
-    text-shadow: 0 0 5px black;
-    overflow: hidden
-
- }
-
-
-/* body parrafo 2 */
-
-#section-2 {
-    width: 90%;
-    background-color: #65d6f8a1;
-    height: 400px;
-    margin: auto;
-    margin-top: 100px;
-    text-align: center;
-    border: 3px solid black;
-    box-sizing: border-box;
- }
-
- .nleft-1 p {
-    text-align: justify;
-    padding: 20px;
-    font-size: 18px;
-    color: rgb(65, 60, 60);
- }
-
- .nright-2 {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
-    padding: 20px;
-
- }
-
-/* iframe */
-
-.iframe {
-    width: 100%;
-    height: 400px;
-    margin-top: 100px;
-    text-align: center;
-
+section {
+    justify-content: center;
 }
 
-/* parrafo contacto */
+.card {
+    box-shadow: 2px 2px 5px #000;
+    opacity: .9;
+    background: #B5EDCF;  
+}
+.card-body {
+    color: #AD0A5F;
+    font-size: 18px;
+    padding-bottom: 1px;
+}
+.accordion .card .card-header .btn {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+}
+.accordion .card .card-header .btn:hover {
+    border-bottom: solid 3px #6807F2;
+}
+
+/* seccion contacto */
 
 .principal-contacto {
     width: 100%;
