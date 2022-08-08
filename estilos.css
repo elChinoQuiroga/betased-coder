@@ -1,536 +1,591 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 #img-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-    box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  box-sizing: border-box;
 }
 
-.presentacion { 
-    width: 100%;
-    height: 55%;
-    margin-top: 50px;
-    background-image: linear-gradient(to left, rgb(8, 112, 112), red);
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
-
-.presentacion h1 {
-    display: flex;
-    font-size: 30px;
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-items: flex-start;
-    box-sizing: border-box;
-    
-}
-.presentacion h3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: flex-start;
-    box-sizing: border-box;
-    font-size: 25px;
+.presentacion, .principal-contacto {
+  width: 100%;
+  height: 55%;
+  padding: 40px;
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom, rgb(8, 112, 122), red);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.presentacion .mision {
-    padding: 15px;
-
+.presentacion h1, .principal-contacto h1 {
+  display: flex;
+  font-size: 30px;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-start;
+  box-sizing: border-box;
 }
 
-.presentacion p {
-    display: flex;
-    font-size: auto;
-    text-align: center;
-    word-spacing: 2px;
-    padding: 40px;
-    margin: auto;
-    box-sizing: border-box;
+.presentacion h3, .principal-contacto h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-start;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+
+.presentacion .mision, .principal-contacto .mision {
+  padding: 15px;
+}
+
+.presentacion p, .principal-contacto p {
+  display: flex;
+  font-size: auto;
+  text-align: center;
+  word-spacing: 2px;
+  padding: 40px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
-    color: black;
-    text-decoration: none;
-    
+  color: black;
+  text-decoration: none;
 }
 
-    /* Navegacion con bootstrap */
+/* Navegacion con bootstrap */
 .navbar {
-    box-shadow: 2px 2px 5px #000;
-    opacity: .9;
+  box-shadow: 2px 2px 5px #000;
+  opacity: 0.9;
+}
+
+.navbar .nav-item .nav-linkitem-1 {
+  color: red;
+}
+
+.navbar .nav-item .nav-linkitem-2 {
+  color: blue;
+}
+
+.navbar .nav-item .nav-linkitem-3 {
+  color: green;
+}
+
+.navbar .nav-item .nav-linkitem-4 {
+  color: violet;
+}
+
+.navbar .nav-item .nav-linkitem-5 {
+  color: #fff;
 }
 
 .navbar .nav-item .nav-link {
-    color: #fff;
-
+  color: #fff;
 }
 
-.navbar .nav-item .nav-link:hover {  
-    color: rgb(31, 228, 228);
-    border-bottom: solid 2px;
-    padding-bottom: 2px;
+.navbar .nav-item .nav-link:hover {
+  color: rgb(31, 228, 228);
+  border-bottom: solid 2px;
+  padding-bottom: 2px;
 }
 
 /* parrafo principal*/
-
 .principal h3 {
-    display: block;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    font-size: 40px;
-    text-align: center;
-    box-sizing: border-box;
-   
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 40px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 /* contenido principal index*/
-
 .MenuDeContenido {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    box-sizing: border-box;
-    
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
 }
 
 .MenuDeContenido img {
-    width: 100%;
-    height: 450px;
-    
+  width: 100%;
+  height: 450px;
 }
 
 .MenuDeContenido h3.h3 {
-    font-size: 20px;
-    padding: 10px 0;
+  font-size: 20px;
+  padding: 10px 0;
 }
 
 .MenuDeContenido a {
-    padding: 10px 0;
-    color: rgb(128, 126, 126);
-    text-transform: uppercase;
-    display: inline-block;
-    font-weight: bold;
+  padding: 10px 0;
+  color: rgb(128, 126, 126);
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
 }
 
 .MenuDeContenido a:hover {
-    text-decoration: none;
-    border-bottom: 2px solid rgb(128, 126, 126);
+  text-decoration: none;
+  border-bottom: 2px solid rgb(128, 126, 126);
 }
 
 footer h3 {
-    color: #fff;
+  color: #fff;
 }
 
 p.copy {
-    color: #fff;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: capitalize;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 footer i {
-    padding-top: 10px;
-    font-size: 35px;
-    letter-spacing: 20px;
-    color: #fff;
-    padding-bottom: 20px;
+  padding-top: 10px;
+  font-size: 35px;
+  letter-spacing: 20px;
+  color: #fff;
+  padding-bottom: 20px;
 }
+
 /* fin del contenido index */
-
 /* footer con bootstrap */
-
 footer {
-    height: 200px;
-    background-color: #000;
-    opacity: .8;
-    width: 100%;
-    margin-top: 100px;
-    text-align: center;
+  height: 200px;
+  background-color: #000;
+  opacity: 0.8;
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .redes i:hover {
-    cursor: pointer;
-    transform: translateY(15px);
+  cursor: pointer;
+  transform: translateY(15px);
 }
 
 /* estilos tecnologia*/
-
-.presentacion-tec { 
-    width: 100%;
-    height: 45%;
-    padding: 40px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    background-image: linear-gradient(to left, rgb(8, 112, 112), red);
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
- }
+.presentacion-tec {
+  width: 100%;
+  height: 55%;
+  padding: 40px;
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom, rgb(8, 112, 122), red);
+  margin-bottom: 100px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
 
 .presentacion-tec h2 {
-    display: flex;
-    font-size: 40px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-items: flex-start;
-    
+  display: flex;
+  font-size: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-start;
 }
 
 .presentacion-tec p {
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-    word-spacing: 2px;
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  word-spacing: 2px;
 }
 
 /* tecnologia  acordion */
-
 section {
-    justify-content: center;
+  justify-content: center;
 }
 
 .card {
-    box-shadow: 2px 2px 5px #000;
-    opacity: .9;
-    background: #B5EDCF;  
+  box-shadow: 2px 2px 5px #000;
+  opacity: 0.9;
+  background: #B5EDCF;
 }
+
 .card-body {
-    color: #AD0A5F;
-    font-size: 18px;
-    padding-bottom: 1px;
+  color: #AD0A5F;
+  font-size: 18px;
+  padding-bottom: 1px;
 }
+
 .accordion .card .card-header .btn {
-    font-size: 18px;
-    text-decoration: none;
-    color: #000;
-    text-transform: capitalize;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
 }
+
 .accordion .card .card-header .btn:hover {
-    border-bottom: solid 3px #6807F2;
+  border-bottom: solid 3px #6807F2;
 }
 
 /* seccion contacto */
-
 .principal-contacto {
-    width: 100%;
-    height: 30%;
-    margin-top: 50px;
-    margin-bottom: 60px;
-    text-align: center;
-    color: white;
-    background-image: linear-gradient(to left, rgb(8, 112, 112), red);
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .principal-contacto h2 {
-    font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 20px;
-    padding-bottom: 30px;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .principal-contacto p {
-    padding: 20px;
+  padding: 20px;
 }
 
 /* formulario */
-
 .contenido-1 p.comentario {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .formulario {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 25px;
-    text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
 .recuadro {
-    display: block;
-    padding: 20px;
+  display: block;
+  padding: 20px;
 }
 
 .contenido-1 {
-    display: block;
-    width: 30%;
-    margin: auto;
-    height: 350px;
-    padding-bottom: 60px;
-    text-align: center;
+  display: block;
+  width: 30%;
+  margin: auto;
+  height: 350px;
+  padding-bottom: 60px;
+  text-align: center;
 }
 
 .botones {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    padding-bottom: 60px;
-    padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-bottom: 60px;
+  padding-top: 20px;
 }
+
 .botones p {
-    display: flex;
-    padding: 5px;
+  display: flex;
+  padding: 5px;
 }
 
 .letter {
-    display: flex;
-    justify-content: left;
-    padding-top: 15px;
+  display: flex;
+  justify-content: left;
+  padding-top: 15px;
 }
 
 .maps {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 25px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 /* gestiones inmobiliarias */
+.presentacion h2.gestiones, .principal-contacto h2.gestiones {
+  display: flex;
+  width: 100%;
+  font-size: 30px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+}
 
-.presentacion h2.gestiones {
-    display: flex;
-    width: 100%;
-    font-size: 40px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: center;
-}
 .tabla1 {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 100px 100px;
-    background: rgb(128, 126, 126);
-    padding: 30px;
-    grid-gap: 10px;
-    border: solid 2px black;
-    margin-top: 100px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 100px;
+  background: rgb(128, 126, 126);
+  padding: 30px;
+  grid-gap: 10px;
+  border: solid 2px black;
+  margin-top: 100px;
 }
-.item {
-    border: solid 2px black;
-    border-radius: 10px;
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 20px;
-    background:rgb(28, 228, 235);
-}
-.item:hover {
-    transform: scale(1.05);
-}
+
 .item1 {
-    grid-column: 1/2;
-    grid-row: 1/3;
+  border: solid 2px black;
+  border-radius: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background: rgb(31, 228, 228);
+  background: #18c7c7;
 }
+
 .item2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
+  border: solid 2px black;
+  border-radius: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background: rgb(31, 228, 228);
+  background: #14a7a7;
 }
+
 .item3 {
-    grid-column: 3/5;
-    grid-row: 1/2;
+  border: solid 2px black;
+  border-radius: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background: rgb(31, 228, 228);
+  background: #108888;
 }
+
 .item4 {
-    grid-column: 2/3;
-    grid-row: 2/4;
+  border: solid 2px black;
+  border-radius: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background: rgb(31, 228, 228);
+  background: #0c6868;
 }
+
 .item5 {
-    grid-column: 3/4;
-    grid-row: 2/3;
+  border: solid 2px black;
+  border-radius: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background: rgb(31, 228, 228);
+  background: #094848;
 }
+
 .item6 {
-    grid-column: 4/5;
-    grid-row: 2/3;
+  border: solid 2px black;
+  border-radius: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background: rgb(31, 228, 228);
+  background: #052828;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.item2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.item3 {
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+
+.item4 {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+
+.item5 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.item6 {
+  grid-column: 4/5;
+  grid-row: 2/3;
 }
 
 /* gestiones a empresas */
+.presentacion h2.empresas, .principal-contacto h2.empresas {
+  display: flex;
+  width: 100%;
+  font-size: 30px;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
 
-.presentacion h2.empresas {
-    display: flex;
+/* media-queries */
+@media (max-width: 1080px) {
+  .MenuDeContenido {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  /* Seccion de inicio */
+  .menu-btn {
+    display: block;
+  }
+  .nav-menu ul.nav-menu-listas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    height: 100%;
+    width: 40%;
+    padding: 30px;
+    opacity: 0.9;
+    transform: translatex(-400px);
+    transition: transform 0.5s ease-in-out;
+  }
+  .nav-menu ul.nav-menu-listas.barra {
+    transform: translatex(0px);
+  }
+  .nav-menu ul.nav-menu-listas li {
+    padding: 20px;
+    color: white;
+  }
+  #img-logo {
+    width: 80%;
+    height: auto;
+  }
+  .presentacion-tec {
     width: 100%;
-    font-size: 40px;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    height: auto;
+    padding: 30px;
+  }
+  .MenuDeContenido {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    height: auto;
+  }
+  .MenuDeContenido img {
+    width: 100%;
+    height: 350px;
+  }
 }
-    /* media-queries */
-@media (max-width:1080px) {
-    .MenuDeContenido {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width:700px) {
-
-/* Seccion de inicio */
-
-    .menu-btn {
-        display: block;
-    }
-
-    .nav-menu ul.nav-menu-listas {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #2f3640;
-        height: 100%;
-        width: 40%;
-        padding: 30px;
-        opacity: 0.9;
-        transform: translatex(-400px);
-        transition: transform .5s ease-in-out;}
-
-    .nav-menu ul.nav-menu-listas.barra {
-        transform: translatex(0px);
-    }
-
-    .nav-menu ul.nav-menu-listas li {
-        padding: 20px;
-        color: white;}    
-    
-    
-    #img-logo {
-        width: 80%;
-        height: auto;}
-
-    .presentacion-tec {
-        width: 100%;
-        height: auto;
-        padding: 30px;
-    }
-    
-    .MenuDeContenido { grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-        height: auto;}
-
-    .MenuDeContenido img {
-        width: 100%;
-        height: 350px;}
-    }
-
-    /** Seccion "tecnologia" **/
-
-    .nright p {
-        width: 100%;
-        height: auto;
-    
-    }
-
-    .parrafo1 p {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    /* Seccion "contacto" */
-
-    .contraste {
-        width: 100%;
-        height: 50%;
-        margin: auto;
-    }
-    .contenido-1 {
-        width: 60%;
-        height: 50%;
-        margin: auto;
-        text-align: center;
-    }
-
-    .maps  {
-        width: 60%;
-        height: 50%;
-        margin: auto;
-    }
-    /* Seccion G. Inmobiliarias */
-
-    .tabla {
-        display: flex;
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-
-
-
-@media (max-width:550px) {
-    .tabla1 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .item {
-        padding: 10px;
-    }
+/** Seccion "tecnologia" **/
+.nright p {
+  width: 100%;
+  height: auto;
 }
 
-@media (max-width:450px) {
-
-    .MenuDeContenido img {
-        width: 100%;
-        height: 270px;}
-    
-    #img-logo {
-            width: 100%;
-            height: auto;}
+.parrafo1 p {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-@media (max-width:400px) {
-    .nav-menu ul.nav-menu-listas {
-        width: 60%;
-    }
+/* Seccion "contacto" */
+.contraste {
+  width: 100%;
+  height: 50%;
+  margin: auto;
 }
 
-@media (max-width:350px) {
-    .presentacion h1 {
-        font-size: 30px;
-    }
-    .principal h3 {
-        font-size: 30px;
-    }
+.contenido-1 {
+  width: 60%;
+  height: 50%;
+  margin: auto;
+  text-align: center;
 }
 
-@media (max-width:320px) {
-    .maps {
-        display: none;
-    }
-
+.maps {
+  width: 60%;
+  height: 50%;
+  margin: auto;
 }
 
-
-@media (max-width:280px) {
-    .nav-menu ul.nav-menu-listas {
-        width: 60%;
-        padding: 10px;
-    }
-}
-@media (max-width:220px) {
-    .nav-menu ul.nav-menu-listas {
-        width: 60%;
-        padding: 0px;
-    }
+/* Seccion G. Inmobiliarias */
+.tabla {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
 
-    
+@media (max-width: 550px) {
+  .tabla1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    padding: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .MenuDeContenido img {
+    width: 100%;
+    height: 270px;
+  }
+  #img-logo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .nav-menu ul.nav-menu-listas {
+    width: 60%;
+  }
+}
+@media (max-width: 350px) {
+  .presentacion h1, .principal-contacto h1 {
+    font-size: 30px;
+  }
+  .principal h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .maps {
+    display: none;
+  }
+}
+@media (max-width: 280px) {
+  .nav-menu ul.nav-menu-listas {
+    width: 60%;
+    padding: 10px;
+  }
+}
+@media (max-width: 220px) {
+  .nav-menu ul.nav-menu-listas {
+    width: 60%;
+    padding: 0px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
